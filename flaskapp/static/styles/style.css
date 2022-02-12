@@ -391,6 +391,60 @@ body#feed{
   white-space: nowrap;
 }
 
+.home-title{
+  position: absolute;
+  width: 133px;
+  height: 36px;
+  left: 25px;
+  top: 70px;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.location{
+  /* University of California, Irvine */
+  position: absolute;
+  width: 224px;
+  height: 21px;
+  left: 10%;
+  top: 20%;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+
+  color: #000000;
+
+}
+
+.student-sales{
+  /* Student Sales */
+  position: absolute;
+  width: 222px;
+  height: 36px;
+  left: 5%;
+  top: 30%;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+
 .userfeed{
   position: absolute;
   width: 95%;
