@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body id="login">
   <!-- javascript here for quick loading / bootup page -->
   <!--
   <div id="splash">
@@ -24,20 +24,24 @@
 
 
   <div class="content">
-    <form class="box" action="login.html" method="POST">
+    <form class="homebox" action="userfeed.html">
+      <!-- big circle -->
+      <img src="../images/corner-circle.png" alt="Corner Circle" width="209" height="209" style="position: absolute; left: 35%;
+      top: -10%;">
 
-      <!-- <h1>Login</h1> -->
+      <!-- small circle -->
+      <img src="../images/mini-circle.png" alt="mini Circle" width="46" height="46" style="position: absolute; left: 5%;
+      top: -10%;">
 
-      <!-- <input type="text" name="" placeholder="Email" id="username">
-      <input type="password" name="" placeholder="Password" id="password"> -->
 
-      <h1 id="stuSell">StudentSell</h1>
-      <p id="desc">Buy and sell items right from your college campus!</p>
-
-      <div class="loginButtons">
-        <input type="submit" name="" value="Log In" id="login">
-        <input type="submit" name="" value="Sign Up" id="signup" >
+      <div class="welcome">
+        <h1>Welcome Back!</h1>
       </div>
+
+      <input type="text" name="" placeholder="Email" id="username">
+      <input type="password" name="" placeholder="Password" id="password">
+
+      <input type="submit" name="" value="Log In" id="homelogin">
 
     </form>
   </div>
