@@ -39,8 +39,6 @@ posts = [
         'content': '1 coaching session with the #1 mario cart-er in the world.',
         'price': '$1000.00'
     }
-
-
 ]
 
 #what we type into our browser to go to different pages
@@ -55,6 +53,10 @@ def login():
 @app.route("/feed")
 def feed():
     return render_template('userfeed.html', posts=posts)
+
+@app.route("/styles/style.css")
+def style():
+    return render_template('layout.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
