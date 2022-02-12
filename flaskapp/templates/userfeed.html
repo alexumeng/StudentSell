@@ -7,22 +7,47 @@
     <img src="images/loading-screen-logo.png" alt="" class="logo">
   </div> -->
 
-
   <div class="content">
-    <form class="userfeedbox" action="userfeed.html">
+      <form class="userfeedbox" action="userfeed.html">
+      <!-- big circle -->
+      <img src="../static/images/corner-circle.png" alt="Corner Circle" width="209" height="209" style="position: absolute; left: 46.5%;
+      top: -5%;">
+      <!-- small circle -->
+      <img src="../static/images/mini-circle.png" alt="mini Circle" width="46" height="46" style="position: absolute; left: 20%; top: 1%;">
 
 
       <div class="userfeed">
-        {% for post in posts %}
-        <h1>{{ post.title }}</h1>
-        <p>By {{ post.user }} for {{ post.price }} </p>
-        <p>{{ post.content }}</p>
-        {% endfor %}
 
+          {% for post in posts %}
+          <article class="media-listings">
 
+            <div class="media-body">
+
+              <div class="sell-metadata">
+                <a class="sell-prof" href="#">{{ post.author }}</a>
+              </div>
+
+              <h2>
+                <a class="sell-title" href="#">{{ post.title }}</a>
+              </h2>
+
+              <div class="post-content">
+                <p> {{ post.content }}</p>
+              </div>
+
+            </div>
+
+            <div class="img-box">
+              <div class="sell-img">
+                <img src="{{ url_for('static', filename=post.pic) }}" alt="" id="post-img">
+              </div>
+            </div>
+
+          </article>
+
+          {% endfor %}
 
       </div>
-
     </form>
   </div>
 
