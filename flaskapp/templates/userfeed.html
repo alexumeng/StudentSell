@@ -14,13 +14,26 @@
       top: -5%;">
       <!-- small circle -->
       <img src="../static/images/mini-circle.png" alt="mini Circle" width="46" height="46" style="position: absolute; left: 20%; top: 1%;">
-
       <!-- location icon -->
-      <img src="../static/images/location-icon.png" alt="location-icon" width="46" height="46" style="position: absolute; left: 4%; top: 20%;
-      width: 5%; height: auto;">
-
+      <img src="../static/images/location-icon.png" alt="location-icon" width="46" height="46" style="position: absolute; left: 3.5%; top: 19.5%;
+      width: 4.5%; height: auto;">
+      <!-- break line -->
       <img src="../static/images/line.png" alt="line" width="46" height="46" style="position: absolute; left: 4%; top: 25%; height: .2%;
       width: 91.5%">
+      <!-- break line -->
+      <img src="../static/images/line.png" alt="line" width="46" height="46" style="position: absolute; left: 4%; top: 58%; height: .3%;
+      width: 91.5%">
+      <!-- mail icon -->
+      <img src="../static/images/mail.png" alt="mail" width="46" height="46" style="position: absolute; left: 80%; top: 10.01%;
+      height: auto;">
+      <!-- active icon -->
+      <img src="../static/images/active-now.png" alt="active" width="420" height="92" style="position: absolute; left: 42%; top: 30%;
+      width: 30%; height: auto;">
+      <!-- bottom bar -->
+      <!-- <img src="../static/images/bottom-bar.png" alt="bottom bar" width="46" height="46" style="position: absolute; top: 90%; width: 101%;
+      right: .001%; height: auto; background: #FFFFFF; border: 1.5px solid #DBDBDB; box-sizing: border-box;"> -->
+
+
 
       <div class="home-title">
         <h1>Home</h1>
@@ -32,6 +45,14 @@
 
       <div class="student-sales">
         <h1>Student Sales</h1>
+      </div>
+
+      <div class="club-see">
+        <h2>See All</h2>
+      </div>
+
+      <div class="student-see">
+        <h2>See All</h2>
       </div>
 
       <div class="userfeed">
@@ -66,7 +87,69 @@
           {% endfor %}
 
       </div>
+
+      <div class="club-sales">
+        <h1>Club Sales</h1>
+      </div>
+
+      <div class="clubfeed">
+
+          {% for club in clubs %}
+          <article class="media-listings">
+
+            <div class="media-body">
+
+              <div class="sell-metadata">
+                <a class="sell-prof" href="#">{{ club.author }}</a>
+              </div>
+
+              <h2>
+                <a class="sell-title" href="#">{{ club.title }}</a>
+              </h2>
+
+              <div class="post-content">
+                <p> {{ club.content }}</p>
+              </div>
+
+            </div>
+
+            <div class="img-box">
+              <div class="sell-img">
+                <img src="{{ url_for('static', filename=club.pic) }}" alt="" id="post-img">
+              </div>
+            </div>
+
+          </article>
+
+          {% endfor %}
+
+      </div>
+
+
     </form>
+
+  <div class="navbar">
+    <a href="home" class="active">Home</a>
+    <a href="search">Search</a>
+    <a href="history">History</a>
+    <a href="account">Account</a>
+  </div>
+
+  <div class="add-img">
+    <a href="post" target="blank">
+      <!-- post icon -->
+      <img src="../static/images/add-button.png" alt="add button" width="46" height="46" style="position: absolute; left: 40%; top: 87%;
+      width: 18%; height: auto;">
+    </a>
+  </div>
+
+
+  <!-- <form class="nav-search" action="search.html">
+      <div class="search-button">
+        <input type="submit" name="" value="Search" id="Search">
+      </div>
+  </form> -->
+
   </div>
 
 </body>
