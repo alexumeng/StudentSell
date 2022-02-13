@@ -105,6 +105,10 @@ def login():
 def feed():
     return render_template('userfeed.html', posts=posts, clubs=clubs)
 
+@app.route("/account")
+def account():
+    return render_template('account.html')
+
 @app.route("/styles/style.css")
 def style():
     return render_template('layout.html')

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+<body id="account">
+  <!-- javascript here for quick loading / bootup page -->
+  <!--
+  <div id="splash">
+    <img src="images/loading-screen-logo.png" alt="" class="logo">
+  </div> -->
+
+
+  <div class="content">
+    <!-- big circle -->
+    <img src="../static/images/corner-circle.png" alt="Corner Circle" width="209" height="209" style="position: absolute; left: 46.5%;
+    top: -5%;">
+    <!-- small circle -->
+    <img src="../static/images/mini-circle.png" alt="mini Circle" width="46" height="46" style="position: absolute; left: 20%; top: 1%;">
+    <!-- mail icon -->
+    <img src="../static/images/mail.png" alt="mail" width="46" height="46" style="position: absolute; left: 80%; top: 10.01%;
+    height: auto;">
+
+    <div class="home-title">
+      <h1>Account</h1>
+    </div>
+
+    <form class="logout" action="/">
+      <div class="logoutButton">
+        <input type="submit" name="" value="Log Out" id="logout">
+      </div>
+    </form>
+
+    <div class="navbar">
+      <a href="feed">Home</a>
+      <a href="search">Search</a>
+      <a href="history">History</a>
+      <a href="account"  class="active">Account</a>
+    </div>
+
+    <div class="add-img">
+      <a href="post" target="blank">
+        <!-- post icon -->
+        <img src="../static/images/add-button.png" alt="add button" width="46" height="46" style="position: absolute; left: 40%; top: 87%;
+        width: 18%; height: auto;">
+      </a>
+    </div>
+
+  </div>
+
+</body>
+{% endblock content %}

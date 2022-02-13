@@ -615,7 +615,7 @@ body#feed::-webkit-scrollbar {
   box-sizing: border-box;
 
   top: 40%;
-  width: 25%;
+  width: 24%;
   height: 10%;
   right: .001%;
   text-decoration: none;
@@ -638,4 +638,50 @@ body#feed::-webkit-scrollbar {
 .navbar a.active{
   font-style: bold;
   color: #FFBB38;
+}
+
+/*
+
+
+ACCOUNT page
+
+*/
+
+.logoutButton{
+  /* Rectangle 8 */
+
+
+  position: absolute;
+  width: 347px;
+  height: 70px;
+  left: 5%;
+  top: 75%;
+
+  background: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(233, 233, 233, 0.25);
+  border-radius: 8px;
+}
+
+input#logout{
+  /* Log Out */
+
+  position: absolute;
+  width: 106px;
+  height: 23px;
+  left: 20%;
+  top: 30%;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+
+  background: transparent;
+  border: none;
+
+  color: #848484;
 }
